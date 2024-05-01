@@ -2,17 +2,7 @@
 - hosts: all 
   become: yes 
   tasks: 
-   - name: i want to install apache2 webserver on ubuntu
-     apt: 
-      name: apache2 
-      state: present  
 
-   - name: i want to start apache2 webserver on ubuntu 
-     services: 
-        name: apache2 
-        state: started  
-
-  
    - name: i want to install apache2 webserver on ubuntu
      apt: 
       name: apache2 
@@ -25,14 +15,14 @@
         state: started  
      when: ansible_os_family =="Debian" 
 
-   - name: i wnat to intall httpd webserver on RedHat 
-     service: 
-      name: httpd 
-      state: present 
+   - name: i want to install httpd webserver on RedHat 
+     dnf: 
+       name: httpd 
+       state: present 
      when: ansible_os_family=="RedHat" 
 
-   - name: i wnat to start httpd webserver on RedHat 
+   - name: i want to start httpd webserver on RedHat 
      service: 
-      name: httpd 
-      state: started 
+       name: httpd 
+       state: started 
      when: ansible_os_family=="RedHat" 
