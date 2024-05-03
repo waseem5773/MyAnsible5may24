@@ -6,24 +6,24 @@
 
    - name: i want to install apache2 webserver on ubuntu
      apt: 
-      name: apache2 
+      name: "{{mywebpackonubuntu}}" 
       state: present  
      when: ansible_os_family =="Debian"
  
    - name: i want to start apache2 webserver on ubuntu 
      service: 
-        name: apache2 
+        name: "{{mywebpackonubuntu}}"
         state: started  
      when: ansible_os_family =="Debian" 
 
    - name: i want to install httpd webserver on RedHat 
      dnf: 
-       name: httpd 
+       name: "{{mywebpackonredhat}}"
        state: present 
      when: ansible_os_family=="RedHat" 
 
    - name: i want to start httpd webserver on RedHat 
      service: 
-       name: httpd 
+       name: "{{mywebpackonredhat}}"
        state: started 
      when: ansible_os_family=="RedHat" 
