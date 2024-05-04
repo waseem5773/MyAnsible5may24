@@ -13,3 +13,5 @@
       name: "{{myjavapackonredhat}}" 
       state: present 
     when: ansible_os_family=="redhat"      
+
+# ansible engg always gives more priority to Host vars than group vars 

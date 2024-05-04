@@ -1,8 +1,6 @@
-[mywebservers] 
-172.31.38.96
+[mywebservers]
 172.31.0.247 
-
-
+172.31.38.96
 
 
 [myappservers]
