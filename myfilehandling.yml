@@ -3,7 +3,7 @@
   become: yes 
   tasks: 
   - name: i want to create a folder 
-    files:  
+    file:  
        path: /home/maha/myfolder 
        state: directory 
 
