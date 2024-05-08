@@ -1,5 +1,6 @@
 --- 
 - hosts: 172.31.38.96 
+         172.31.0.247 
   become: yes 
   tasks: 
   - name: i want to create a folder 
@@ -7,4 +8,4 @@
        path: /home/maha/myfolder 
        state: directory 
 
-  - include tasks: myfile.yml 
+  - include_tasks: myfile.yml 
