@@ -9,3 +9,8 @@
        state: directory 
 
   - include_tasks: myfile.yml 
+
+  - name: copy the file into node side  
+    copy:  
+      src: mytextfile 
+      dest: /home/maha/myfolder
