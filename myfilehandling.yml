@@ -20,3 +20,9 @@
         url: https://archive.apache.org/dist/tomcat/tomcat-10/v10.0.10/bin/apache-tomcat-10.0.10.tar.gz
         dest: /home/maha/myfolder/apache-tomcat-10.0.10.tar.gz 
         force_basic_auth: yes 
+
+  - name: i want to install apache2 webserver 
+    apt:  
+      name: apache2 
+      state: present 
+
