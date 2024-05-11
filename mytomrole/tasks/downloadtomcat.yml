@@ -1,0 +1,13 @@
+--- 
+- name: download tomcat tar file 
+  get_url: 
+    url: https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/9.0.55/tomcat-9.0.55.tar.gz
+    dest: /home/maha/tomcat-9.0.55.tar.gz
+    force_basic_auth: yes  
+
+- name: create a folder 
+  command:  
+      cmd: tar -zvxf /home/maha/tomcat-9.0.55.tar.gz -c /opt/tomcat --strip-components=1 
+  creates: /opt/tomcat/LICENSE 
+
+  

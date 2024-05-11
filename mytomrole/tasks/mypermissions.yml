@@ -1,0 +1,7 @@
+--- 
+- name: change permission on startup.sh 
+  command: chmod +x /opt/tomcat/bin/startup.sh  
+
+- name: change permission on shutdown.sh  
+  command: chmod +x /opt/tomcat/bin/shutdown.sh 
+   
