@@ -5,7 +5,12 @@
     dest: /home/maha/tomcat-9.0.55.tar.gz
     force_basic_auth: yes  
 
-- name: create a folder 
+- name: create tomcat folder 
+  file:  
+    path: /opt/tomcat 
+    state: directory   
+  
+- name: extract tar file 
   command:  
       cmd: tar -zvxf /home/maha/tomcat-9.0.55.tar.gz -c /opt/tomcat --strip-components=1 
   creates: /opt/tomcat/LICENSE 
