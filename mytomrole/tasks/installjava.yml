@@ -1,5 +1,8 @@
 ---  
 - name: update package 
-  dnf:  
-    name: java-1.8* 
+  dnf: update_cache=yes  
+   
+- name: install java  
+  dnf:   
+    name: java-1.8*
     state: present 
