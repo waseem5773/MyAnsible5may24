@@ -12,7 +12,7 @@
   
 - name: extract tar file 
   command:  
-      cmd: tar -zvxf /home/maha/tomcat-9.0.55.tar.gz -c /opt/tomcat --strip-components=1 
+      cmd: tar -zvxf /home/maha/tomcat-9.0.55.tar.gz -C /opt/tomcat --strip-components=1 
   creates: /opt/tomcat/LICENSE 
 
   
