@@ -1,6 +1,6 @@
 ---
 # tasks file for mywebrole 
-- name: install apache2 webserver 
-  apt:  
+- name: install apache2 httpd webserver 
+  yum:  
     name: apache2 
     state: present  
