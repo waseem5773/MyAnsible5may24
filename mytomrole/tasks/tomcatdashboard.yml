@@ -10,7 +10,7 @@
        dest: /opt/tomcat/webapps/manager/META-INF/context.xml 
 
 - name: copy tomcat user file into ansible node side 
-  templates: 
+  template: 
         src: templates/mytomuser.j2  
         dest: /opt/tomcat/conf/tomcat-users.xml 
   
