@@ -1,11 +1,11 @@
 --- 
 - name: create a link tomcatup 
   command: 
-      cmd: ln -s /opt/tomcat/bin/startup.sh /usr/local/bin/tomcatup   
+      cmd:  ln -s /opt/tomcat/bin/startup.sh /usr/local/bin/tomcatup
        
 
 - name: create a link tomcatdown
   command: 
-      cmd: ln -s /opt/tomcat/bin/startdown.sh /usr/local/bin/tomcatdown 
+      cmd: ln -s /opt/tomcat/bin/shutdown.sh /usr/local/bin/tomcatdown
        
       
