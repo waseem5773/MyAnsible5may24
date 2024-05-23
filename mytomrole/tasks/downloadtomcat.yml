@@ -7,7 +7,7 @@
   
 - name: create tomcat folder 
   file:   
-    file: /opt/tomcat  
+    path: /opt/tomcat  
     state: directory  
 
 - name: extract tar file 
