@@ -7,5 +7,5 @@
 - name: create a link tomcatdown
   command: 
       cmd: ln -s /opt/tomcat/bin/startdown.sh /usr/local/bin/tomcatdown 
-      creates: /opt/tomcat/LICENSE 
+       
       
